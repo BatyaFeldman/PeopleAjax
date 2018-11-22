@@ -68,8 +68,8 @@
                     <td>${person.LastName}</td>
                     <td>${person.Age}</td>
                     <td>
-                         <button class="btn btn-info" data-personid="${person.Id}" data-firstname="${person.FirstName}" data-lastname="${person.LastName}" data-age="${person.Age}">Edit</button>
-                         <button class="btn btn-danger" data-personid="${person.Id}">Delete</button>
+                         <button class="btn btn-info" data-personid="${person.Id}" data-firstname="${person.FirstName}" data-lastname="${person.LastName}" data-age="${person.Age}">Edit Person</button>
+                         <button class="btn btn-danger" data-personid="${person.Id}">Delete Person</button>
                     </td>
                                  </tr>`)
 
