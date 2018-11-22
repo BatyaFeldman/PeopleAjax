@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleAjax", "PeopleAjax\PeopleAjax.csproj", "{719CF705-396E-4341-808D-F8ADAE020F51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleAjax.Data", "PeopleAjax.Data\PeopleAjax.Data.csproj", "{18F4ACD4-1EBF-4EA6-857E-0D885087065B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{719CF705-396E-4341-808D-F8ADAE020F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719CF705-396E-4341-808D-F8ADAE020F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719CF705-396E-4341-808D-F8ADAE020F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719CF705-396E-4341-808D-F8ADAE020F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F4ACD4-1EBF-4EA6-857E-0D885087065B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F4ACD4-1EBF-4EA6-857E-0D885087065B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F4ACD4-1EBF-4EA6-857E-0D885087065B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F4ACD4-1EBF-4EA6-857E-0D885087065B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AACB3077-0D52-4616-A2C8-382DF30D166E}
+	EndGlobalSection
+EndGlobal
