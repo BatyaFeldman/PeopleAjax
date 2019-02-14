@@ -29,7 +29,7 @@ namespace PeopleAjax.Data
             using (SqlConnection connection = new SqlConnection(_connectionString))
                 using(SqlCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandText = "select * from people";
+                cmd.CommandText = "select * from Persons";
                 List<Person>results = new List<Person>();
                 connection.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -52,7 +52,7 @@ namespace PeopleAjax.Data
             using (SqlConnection connection = new SqlConnection(_connectionString))
                 using(SqlCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandText = "insert into people values(@firstName, @lastName, @age)";
+                cmd.CommandText = "insert into persons values(@firstName, @lastName, @age)";
                 cmd.Parameters.AddWithValue("@firstName", person.FirstName);
                 cmd.Parameters.AddWithValue("@lastName", person.LastName);
                 cmd.Parameters.AddWithValue("@age", person.Age);
@@ -66,7 +66,7 @@ namespace PeopleAjax.Data
             using (SqlConnection connection = new SqlConnection(_connectionString))
             using (SqlCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandText = "update people set FirstName=@firstName, LastName=@lastName, Age=@age where id=@personId";
+                cmd.CommandText = "update persons set FirstName=@firstName, LastName=@lastName, Age=@age where id=@personId";
                 cmd.Parameters.AddWithValue("@firstName", person.FirstName);
                 cmd.Parameters.AddWithValue("@lastName", person.LastName);
                 cmd.Parameters.AddWithValue("@age", person.Age);
@@ -81,7 +81,7 @@ namespace PeopleAjax.Data
             using (SqlConnection connection = new SqlConnection(_connectionString))
             using (SqlCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandText = "delete from people where id=@personId";
+                cmd.CommandText = "delete from persons where id=@personId";
                 cmd.Parameters.AddWithValue("@personId", personId);
                 connection.Open();
                 cmd.ExecuteNonQuery();
